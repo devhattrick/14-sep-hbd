@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { birthday } from "../data/birthday";
+import { withBase } from "../lib/hooks";
 import Sparkles from "./Sparkles";
 
 /**
@@ -43,7 +44,7 @@ export default function PhotoReveal() {
         >
           <div className="relative overflow-hidden rounded-[20px]">
             <motion.img
-              src={birthday.mainPhoto}
+              src={withBase(birthday.mainPhoto)}
               alt={`รูปของ ${birthday.name}`}
               className="block h-full w-full object-cover"
               style={{ aspectRatio: "4 / 5" }}

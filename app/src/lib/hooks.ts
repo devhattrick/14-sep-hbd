@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react'
 
+/** Resolves a root-absolute public path (e.g. "/images/x.jpg") against Vite's base, so it still works when the site is deployed under a subpath. */
+export function withBase(path: string) {
+  if (!path || /^(https?:)?\/\//.test(path)) return path
+  return import.meta.env.BASE_URL.replace(/\/$/, '') + path
+}
+
 /**
  * Locks `--app-height` to the real visible viewport height.
  * iOS Safari's `100vh` includes the URL bar, which makes every full-screen

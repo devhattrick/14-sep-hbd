@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useSpring } from 'framer-motion'
 import { birthday, type Memory } from '../data/birthday'
+import { withBase } from '../lib/hooks'
 import Sparkles from './Sparkles'
 
 /**
@@ -105,7 +106,7 @@ function TimelineItem({ item, index }: { item: Memory; index: number }) {
         <div className="glass overflow-hidden rounded-3xl shadow-[0_20px_50px_-26px_rgba(140,70,110,.6)]">
           <div className="relative overflow-hidden">
             <motion.img
-              src={item.image}
+              src={withBase(item.image)}
               alt={item.title}
               loading="lazy"
               className="block h-52 w-full object-cover sm:h-60"

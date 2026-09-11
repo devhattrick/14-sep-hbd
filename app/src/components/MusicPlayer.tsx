@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { birthday } from '../data/birthday'
+import { withBase } from '../lib/hooks'
 
 /* ── YouTube IFrame API (minimal typings) ───────────────────── */
 type YTPlayer = {
@@ -177,7 +178,7 @@ export default function MusicPlayer({ autoStart, visible }: Props) {
   return (
     <>
       {/* hidden players */}
-      {fileSrc && <audio ref={audioRef} src={fileSrc} loop preload="auto" />}
+      {fileSrc && <audio ref={audioRef} src={withBase(fileSrc)} loop preload="auto" />}
       {ytId && (
         <div
           aria-hidden

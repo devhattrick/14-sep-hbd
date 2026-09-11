@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { birthday } from '../data/birthday'
+import { withBase } from '../lib/hooks'
 
 /** Masonry-ish grid of little moments with a blurred full-screen lightbox. */
 export default function MemoryGallery() {
@@ -74,7 +75,7 @@ export default function MemoryGallery() {
             aria-label={`ดูรูป: ${p.caption}`}
           >
             <img
-              src={p.image}
+              src={withBase(p.image)}
               alt={p.caption}
               loading="lazy"
               className="block w-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
@@ -125,7 +126,7 @@ export default function MemoryGallery() {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={photos[open].image}
+                src={withBase(photos[open].image)}
                 alt={photos[open].caption}
                 className="mx-auto max-h-[72svh] w-auto max-w-full rounded-2xl object-contain shadow-2xl"
                 draggable={false}
