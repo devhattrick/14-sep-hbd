@@ -155,7 +155,7 @@ export const birthday = {
       "ถึงคนพิเศษของเรา 💗",
       "สุขสันต์วันเกิดนะ",
       "ขอให้ปีนี้เป็นปีที่เต็มไปด้วย\nเรื่องดี ๆ รอยยิ้ม และความสุข",
-      "ขอให้ทุกสิ่งที่ตั้งใจไว้\nค่อย ๆ กลายเป็นจริง",
+      "มีความสุขมากกับทุกช่วงเวลาของชีวิตนะ 😊",
       "ขอบคุณสำหรับทุกช่วงเวลาที่เราได้มีร่วมกัน",
       "ไม่ว่าอนาคตจะเป็นอย่างไร ดีใจที่ได้เจอคับ 🤍",
       "🎉 Happy Birthday 🎂",
@@ -175,7 +175,7 @@ export const birthday = {
 
   /* ─── Final Message ────────────────────────────────────── */
   finale: {
-    title: "🎉 Happy Birthday 🎉",
+    title: "Happy Birthday",
     subtitle: "💖 My Special Person 💗",
     date: "14 September",
     lines: [
@@ -191,7 +191,7 @@ export const birthday = {
     /** ต้องกดหัวใจที่ลอยอยู่กี่ครั้ง */
     tapsRequired: 14,
     message: "You found my little secret. 💗",
-    submessage: "เธอเก่งจัง หาเจอด้วย 🥹",
+    submessage: "เธอเก่งจัง หาเจอด้วย... จิบโปะ 🥹",
   },
 } as const;
 
