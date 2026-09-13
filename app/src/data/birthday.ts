@@ -199,7 +199,7 @@ export const birthday = {
     /** ต้องกดหัวใจที่ลอยอยู่กี่ครั้ง */
     tapsRequired: 3,
     message: "You found my little secret. 💗",
-    submessage: "เธอเก่งจัง หาเจอด้วย... จิบโปะ 🥹",
+    submessage: "เธอเก่งจัง หาเจอด้วย... จิบโปะ!! #รักนะวันทอง 🥹",
   },
 } as const;
 
