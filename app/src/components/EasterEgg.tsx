@@ -76,7 +76,7 @@ export default function EasterEgg({ open, onClose }: Props) {
             <h3 className="mt-5 font-display text-2xl text-blush-deep">
               {birthday.easterEgg.message}
             </h3>
-            <p className="mt-3 font-body text-sm text-ink/65">
+            <p className="mt-3 font-body text-sm text-blush-deep/80">
               {birthday.easterEgg.submessage}
             </p>
             <button

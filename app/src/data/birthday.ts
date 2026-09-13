@@ -134,16 +134,24 @@ export const birthday = {
   gallerySubtitle: "เก็บไว้ทุกรูป เพราะทุกรูปมีเธออยู่ในนั้น",
 
   gallery: [
-    { image: "/images/memory-01.jpg", caption: "วันที่ไม่ธรรมดาเลยสักนิด" },
-    { image: "/images/memory-02.jpg", caption: "ยิ้มแบบนี้แหละที่ชอบที่สุด" },
-    { image: "/images/memory-03.jpg", caption: "ทะเลกับเธอ 🌊" },
+    { image: "/images/memory-01.jpg", caption: "คือเจอกันวันแรก กวนตินเลย" },
+    { image: "/images/memory-02.jpg", caption: "ทะเลกับเธอ 🌊" },
+    { image: "/images/memory-03.jpg", caption: "ยิ้มแบบนี้แหละที่ชอบที่สุด" },
     { image: "/images/memory-04.jpg", caption: "แก้วนี้เพื่อเรานะ 🍻" },
     { image: "/images/memory-05.jpg", caption: "อยู่ด้วยกันแล้วสบายใจ 💝" },
-    { image: "/images/memory-06.jpg", caption: "วันธรรมดาที่พิเศษ" },
-    { image: "/images/memory-07.jpg", caption: "เก็บไว้ในใจตลอดไป" },
+    { image: "/images/memory-06.jpg", caption: "สวยสุดและ💖" },
+    { image: "/images/memory-07.jpg", caption: "จุ้บสักที 💋" },
     { image: "/images/memory-08.jpg", caption: "ขอบคุณที่อยู่ตรงนี้" },
-    { image: "/images/karn.jpg", caption: "และอีกหลาย ๆ วันข้างหน้า 💗" },
+    { image: "/images/karn.jpg", caption: "เที่ยวนี่กับเธอสนุกมาก 😆" },
     { image: "/images/memory-09.jpg", caption: "และอีกหลาย ๆ วันข้างหน้า 💗" },
+    {
+      image: "/images/memory-10.jpg",
+      caption: "อยากให้เธอมีความสุขทุกวันนะ 🤍",
+    },
+    {
+      image: "/images/memory-11.jpg",
+      caption: "มีชีวิตกวนตินชาวบ้านอย่างมีความสุขนะ 😜",
+    },
   ] as GalleryPhoto[],
 
   /* ─── Love Letter ──────────────────────────────────────── */
